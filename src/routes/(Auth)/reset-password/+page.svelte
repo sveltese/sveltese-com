@@ -11,6 +11,15 @@
 <div class="card w-full max-w-lg mx-auto bg-white rounded-lg shadow-lg px-6 py-4">
 	<form>
 		<div>
+			<p class="text-sm text-gray-500 py-4">
+				If you've forgotten your password, don't worry. Simply provide us with your email address,
+				and we'll send you a link to reset your password, which will enable you to select a new one.
+			</p>
+			<div class="mt-2">
+				<p class="text-sm text-green-600" style="display: none;" />
+			</div>
+		</div>
+		<div>
 			<label class="block tracking-wide text-black text-sm mb-2" for="email"> Email </label>
 			<input
 				class="block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 leading-tight focus:outline-none focus:bg-white"
@@ -21,39 +30,13 @@
 				<p class="text-sm text-red-600" style="display: none;" />
 			</div>
 		</div>
-		<div>
-			<label class="block tracking-wide text-black text-sm mb-2" for="password"> Password </label>
-			<input
-				class="block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 leading-tight focus:outline-none focus:bg-white"
-				id="password"
-				type="password"
-			/>
-			<div class="mt-2">
-				<p class="text-sm text-red-600" style="display: none;" />
-			</div>
-		</div>
-
-		<div class="block mt-4">
-			<label class="flex items-center"
-				><input
-					type="checkbox"
-					class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
-					name="remember"
-				/><span class="ml-2 text-sm text-gray-600">Remember me</span></label
-			>
-		</div>
 
 		<div class="flex items-center justify-end mt-4">
-			<a
-				class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-				href="/forgot-password"
-			>
-				Forgot your password?
-			</a><button
+			<button
 				type="submit"
 				class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150 ml-4"
 			>
-				Login
+				Email Password Reset Link
 			</button>
 		</div>
 	</form>

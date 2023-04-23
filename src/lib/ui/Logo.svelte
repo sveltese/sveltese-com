@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { APP_NAME } from '$lib/config'
 </script>
 
-<div>{APP_NAME}</div>
+<a href="/">
+	<img src="logo.png" alt="Logo" class="w-20" />
+</a>
