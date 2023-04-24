@@ -1,7 +1,14 @@
 <script lang="ts">
 	import { enhance } from '$app/forms'
-
+	import { superForm } from 'sveltekit-superforms/client'
+	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte'
+	import { z } from 'zod'
 	import Logo from '$lib/ui/Logo.svelte'
+	import type { PageData } from './$types'
+
+	export let data: PageData
+
+	const { form, errors, message } = superForm(data.form)
 </script>
 
 <div class="mx-auto sm:mt-64 my-8 content">
@@ -11,6 +18,7 @@
 </div>
 <!-- w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg -->
 <div class="card w-full max-w-lg mx-auto bg-white rounded-lg shadow-lg px-6 py-4">
+	<!-- <SuperDebug data={$message} /> -->
 	<form method="POST" use:enhance>
 		<div>
 			<p class="text-sm text-gray-500 py-4">
@@ -26,11 +34,25 @@
 			<input
 				class="block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 leading-tight focus:outline-none focus:bg-white"
 				id="email"
+				name="email"
 				type="email"
+				bind:value={$form.email}
 			/>
-			<div class="mt-2">
-				<p class="text-sm text-red-600" style="display: none;" />
-			</div>
+			{#if $errors.email}
+				<div class="mt-2">
+					<p class="text-sm text-red-600">
+						{$errors.email}
+					</p>
+				</div>
+			{/if}
+
+			{#if $message && !$errors.email}
+				<div class="mt-2">
+					<p class="text-sm text-green-600">
+						{$message}
+					</p>
+				</div>
+			{/if}
 		</div>
 
 		<div class="flex items-center justify-end mt-4">
