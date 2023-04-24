@@ -1,5 +1,5 @@
 import nodemailer from 'nodemailer'
-import { MAIL_HOST, MAIL_PORT, MAIL_USER, MAIL_PASS } from '$env/static/private'
+import { MAIL_HOST, MAIL_PORT, MAIL_USERNAME, MAIL_PASSWORD } from '$env/static/private'
 
 if (process.env.NODE_ENV === 'development') {
 	global.prisma = prisma
@@ -10,8 +10,8 @@ const emailClient = nodemailer.createTransport({
 	port: MAIL_PORT,
 	secure: false,
 	auth: {
-		user: MAIL_USER,
-		pass: MAIL_PASS
+		user: MAIL_USERNAME,
+		pass: MAIL_PASSWORD
 	}
 })
 
