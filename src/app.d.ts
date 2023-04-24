@@ -10,6 +10,7 @@ declare global {
 		// interface Platform {}
 	}
 	var prisma: PrismaClient
+	var emailClient
 }
 
 export {}
