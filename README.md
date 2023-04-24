@@ -1,38 +1,28 @@
-# create-svelte
+<p align="center" width="100%">
+    <img width="20%" src="./static/logo.svg"> 
+</p>
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+# Sveltese
 
-## Creating a project
+Sveltese is a collection of tools and startup packages designed for the SvelteKit framework, aiming to streamline development with its expressive and efficient syntax. Our mission is to make the development process enjoyable and innovative, empowering developers to create robust and scalable applications with ease. Sveltese simplifies common tasks and enhances the SvelteKit experience by offering:
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Pre-configured, modular starter templates.
+- An intuitive routing engine for seamless navigation.
+- Efficient state management solutions.
+- Out-of-the-box integrations with popular backend services.
+- Comprehensive UI component libraries.
+- Optimized build and deployment configurations.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Sveltese is user-friendly, adaptable, and equips developers with the resources needed to build and maintain large-scale applications.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Learning Sveltese
 
-## Developing
+Sveltese offers extensive documentation and video tutorials that make it effortless to get started with the SvelteKit framework and our tools. The resources cater to developers of all levels, ensuring a smooth learning curve.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Sveltese Bootcamp
 
-```bash
-npm run dev
+Dive into the Sveltese Bootcamp, where you'll be guided step-by-step through the process of building a modern SvelteKit application from scratch, utilizing our tools and packages.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+### SvelteseCasts
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+If you prefer a more visual learning approach, SvelteseCasts is the perfect solution. Our platform features a vast collection of video tutorials covering topics such as SvelteKit, state management, UI components, and more. Enhance your skills and proficiency by exploring our comprehensive video library.
