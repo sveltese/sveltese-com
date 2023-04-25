@@ -1,6 +1,5 @@
-import { fail } from '@sveltejs/kit'
 import { z } from 'zod'
-import { message, superValidate } from 'sveltekit-superforms/server'
+import { superValidate } from 'sveltekit-superforms/server'
 import { prisma } from '$lib/server/prisma'
 import { createHash } from 'node:crypto'
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Logo from '$lib/ui/Logo.svelte'
+	import Logo from '$lib/shared/Logo.svelte'
 </script>
 
 <nav class="absolute top-0 right-0 pt-4 pr-4">

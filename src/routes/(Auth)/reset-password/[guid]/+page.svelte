@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Logo from '$lib/ui/Logo.svelte'
+	import Logo from '$lib/shared/Logo.svelte'
 	export let data
 	const { email } = data
 </script>

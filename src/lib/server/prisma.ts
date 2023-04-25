@@ -14,3 +14,5 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 export { prisma }
+
+export type PrismaClient = typeof prisma

@@ -2,12 +2,10 @@
 	import { enhance } from '$app/forms'
 	import { superForm } from 'sveltekit-superforms/client'
 	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte'
-	import { z } from 'zod'
-	import Logo from '$lib/ui/Logo.svelte'
+	import Logo from '$lib/shared/Logo.svelte'
 	import type { PageData } from './$types'
 
 	export let data: PageData
-
 	const { form, errors, message } = superForm(data.form)
 </script>
 
@@ -16,9 +14,9 @@
 		<Logo />
 	</div>
 </div>
-<!-- w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg -->
+
 <div class="card w-full max-w-lg mx-auto bg-white rounded-lg shadow-lg px-6 py-4">
-	<!-- <SuperDebug data={$message} /> -->
+	<SuperDebug data={$errors} />
 	<form method="POST" use:enhance>
 		<div>
 			<p class="text-sm text-gray-500 py-4">

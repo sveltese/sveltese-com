@@ -3,7 +3,7 @@ import { z } from 'zod'
 import { message, superValidate } from 'sveltekit-superforms/server'
 import { prisma } from '$lib/server/prisma'
 import { emailClient } from '$lib/server/email'
-import ResetPassword from '$lib/emails/ResetPassword.svelte'
+import ResetPasswordEmail from '$lib/emails/ResetPasswordEmail.svelte'
 import { createHash, randomBytes } from 'node:crypto'
 
 const forgotPasswordSchema = z.object({
@@ -36,6 +36,7 @@ export const actions = {
 		const form = await superValidate(event, forgotPasswordSchema)
 
 		if (!form.valid) {
+			console.log('invalid formx')
 			return fail(400, { form })
 		}
 
@@ -69,7 +70,7 @@ export const actions = {
 
 		// TODO: Come up with an email system that can use tailwindcss
 		// eslint-disable-next-line @typescript-eslint/no-var-requires
-		const { head, html, css } = ResetPassword.render({
+		const { head, html, css } = ResetPasswordEmail.render({
 			token: token,
 			email: user.email
 		})
