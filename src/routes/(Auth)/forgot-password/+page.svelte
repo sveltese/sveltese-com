@@ -16,7 +16,6 @@
 </div>
 
 <div class="card w-full max-w-lg mx-auto bg-white rounded-lg shadow-lg px-6 py-4">
-	<SuperDebug data={$errors} />
 	<form method="POST" use:enhance>
 		<div>
 			<p class="text-sm text-gray-500 py-4">

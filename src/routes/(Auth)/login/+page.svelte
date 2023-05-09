@@ -16,7 +16,6 @@
 </div>
 
 <div class="card w-full max-w-lg mx-auto bg-white rounded-lg shadow-lg px-6 py-4">
-	<SuperDebug data={$errors} />
 	<form method="POST" use:enhance>
 		<div>
 			<label class="block tracking-wide text-black text-sm mb-2" for="email"> Email </label>
@@ -41,7 +40,7 @@
 				class="block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 leading-tight focus:outline-none focus:bg-white"
 				id="password"
 				name="password"
-				type="pasPage0sword"
+				type="password"
 				bind:value={$form.password}
 			/>
 			{#if $errors.password}

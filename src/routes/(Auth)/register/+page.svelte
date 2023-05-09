@@ -16,8 +16,6 @@
 </div>
 
 <div class="card w-full max-w-lg mx-auto bg-white rounded-lg shadow-lg px-6 py-4">
-	<SuperDebug data={$errors} />
-	<SuperDebug {data} />
 	<form method="POST" use:enhance>
 		<div>
 			<label class="block tracking-wide text-black text-sm mb-2" for="name"> Name </label>

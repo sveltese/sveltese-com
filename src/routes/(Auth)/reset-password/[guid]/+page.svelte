@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Logo from '$lib/shared/Logo.svelte'
+  import { enhance } from '$app/forms';
 	export let data
 	const { email } = data
 </script>
@@ -11,7 +12,7 @@
 </div>
 <!-- w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg -->
 <div class="card w-full max-w-lg mx-auto bg-white rounded-lg shadow-lg px-6 py-4">
-	<form>
+	<form use:enhance>
 		<div>
 			<label class="block tracking-wide text-black text-sm mb-2" for="email"> Email </label>
 			<input
