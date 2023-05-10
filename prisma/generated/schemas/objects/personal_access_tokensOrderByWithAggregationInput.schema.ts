@@ -1,12 +1,12 @@
-import { z } from 'zod';
-import { SortOrderSchema } from '../enums/SortOrder.schema';
-import { personal_access_tokensCountOrderByAggregateInputObjectSchema } from './personal_access_tokensCountOrderByAggregateInput.schema';
-import { personal_access_tokensAvgOrderByAggregateInputObjectSchema } from './personal_access_tokensAvgOrderByAggregateInput.schema';
-import { personal_access_tokensMaxOrderByAggregateInputObjectSchema } from './personal_access_tokensMaxOrderByAggregateInput.schema';
-import { personal_access_tokensMinOrderByAggregateInputObjectSchema } from './personal_access_tokensMinOrderByAggregateInput.schema';
-import { personal_access_tokensSumOrderByAggregateInputObjectSchema } from './personal_access_tokensSumOrderByAggregateInput.schema';
+import { z } from 'zod'
+import { SortOrderSchema } from '../enums/SortOrder.schema'
+import { personal_access_tokensCountOrderByAggregateInputObjectSchema } from './personal_access_tokensCountOrderByAggregateInput.schema'
+import { personal_access_tokensAvgOrderByAggregateInputObjectSchema } from './personal_access_tokensAvgOrderByAggregateInput.schema'
+import { personal_access_tokensMaxOrderByAggregateInputObjectSchema } from './personal_access_tokensMaxOrderByAggregateInput.schema'
+import { personal_access_tokensMinOrderByAggregateInputObjectSchema } from './personal_access_tokensMinOrderByAggregateInput.schema'
+import { personal_access_tokensSumOrderByAggregateInputObjectSchema } from './personal_access_tokensSumOrderByAggregateInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.personal_access_tokensOrderByWithAggregationInput> = z
 	.object({
@@ -26,6 +26,6 @@ const Schema: z.ZodType<Prisma.personal_access_tokensOrderByWithAggregationInput
 		_min: z.lazy(() => personal_access_tokensMinOrderByAggregateInputObjectSchema).optional(),
 		_sum: z.lazy(() => personal_access_tokensSumOrderByAggregateInputObjectSchema).optional()
 	})
-	.strict();
+	.strict()
 
-export const personal_access_tokensOrderByWithAggregationInputObjectSchema = Schema;
+export const personal_access_tokensOrderByWithAggregationInputObjectSchema = Schema

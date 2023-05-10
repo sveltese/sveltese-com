@@ -1,11 +1,11 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.teamsWhereUniqueInput> = z
 	.object({
 		id: z.bigint().optional()
 	})
-	.strict();
+	.strict()
 
-export const teamsWhereUniqueInputObjectSchema = Schema;
+export const teamsWhereUniqueInputObjectSchema = Schema

@@ -1,9 +1,9 @@
-import { z } from 'zod';
-import { BigIntFieldUpdateOperationsInputObjectSchema } from './BigIntFieldUpdateOperationsInput.schema';
-import { NullableStringFieldUpdateOperationsInputObjectSchema } from './NullableStringFieldUpdateOperationsInput.schema';
-import { NullableDateTimeFieldUpdateOperationsInputObjectSchema } from './NullableDateTimeFieldUpdateOperationsInput.schema';
+import { z } from 'zod'
+import { BigIntFieldUpdateOperationsInputObjectSchema } from './BigIntFieldUpdateOperationsInput.schema'
+import { NullableStringFieldUpdateOperationsInputObjectSchema } from './NullableStringFieldUpdateOperationsInput.schema'
+import { NullableDateTimeFieldUpdateOperationsInputObjectSchema } from './NullableDateTimeFieldUpdateOperationsInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.team_userUncheckedUpdateInput> = z
 	.object({
@@ -29,6 +29,6 @@ const Schema: z.ZodType<Prisma.team_userUncheckedUpdateInput> = z
 			.optional()
 			.nullable()
 	})
-	.strict();
+	.strict()
 
-export const team_userUncheckedUpdateInputObjectSchema = Schema;
+export const team_userUncheckedUpdateInputObjectSchema = Schema

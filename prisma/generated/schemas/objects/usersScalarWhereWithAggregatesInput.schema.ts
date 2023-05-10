@@ -1,11 +1,11 @@
-import { z } from 'zod';
-import { BigIntWithAggregatesFilterObjectSchema } from './BigIntWithAggregatesFilter.schema';
-import { StringWithAggregatesFilterObjectSchema } from './StringWithAggregatesFilter.schema';
-import { DateTimeNullableWithAggregatesFilterObjectSchema } from './DateTimeNullableWithAggregatesFilter.schema';
-import { StringNullableWithAggregatesFilterObjectSchema } from './StringNullableWithAggregatesFilter.schema';
-import { BigIntNullableWithAggregatesFilterObjectSchema } from './BigIntNullableWithAggregatesFilter.schema';
+import { z } from 'zod'
+import { BigIntWithAggregatesFilterObjectSchema } from './BigIntWithAggregatesFilter.schema'
+import { StringWithAggregatesFilterObjectSchema } from './StringWithAggregatesFilter.schema'
+import { DateTimeNullableWithAggregatesFilterObjectSchema } from './DateTimeNullableWithAggregatesFilter.schema'
+import { StringNullableWithAggregatesFilterObjectSchema } from './StringNullableWithAggregatesFilter.schema'
+import { BigIntNullableWithAggregatesFilterObjectSchema } from './BigIntNullableWithAggregatesFilter.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.usersScalarWhereWithAggregatesInput> = z
 	.object({
@@ -68,6 +68,6 @@ const Schema: z.ZodType<Prisma.usersScalarWhereWithAggregatesInput> = z
 			.optional()
 			.nullable()
 	})
-	.strict();
+	.strict()
 
-export const usersScalarWhereWithAggregatesInputObjectSchema = Schema;
+export const usersScalarWhereWithAggregatesInputObjectSchema = Schema

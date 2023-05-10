@@ -1,5 +1,5 @@
 <script lang="ts">
-import Logo from '$lib/shared/Logo.svelte'
+	import Logo from '$lib/shared/Logo.svelte'
 </script>
 
 <nav class="container-fluid">

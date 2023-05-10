@@ -1,12 +1,12 @@
-import { z } from 'zod';
-import { BigIntFilterObjectSchema } from './BigIntFilter.schema';
-import { StringFilterObjectSchema } from './StringFilter.schema';
-import { StringNullableFilterObjectSchema } from './StringNullableFilter.schema';
-import { DateTimeNullableFilterObjectSchema } from './DateTimeNullableFilter.schema';
-import { TeamsRelationFilterObjectSchema } from './TeamsRelationFilter.schema';
-import { teamsWhereInputObjectSchema } from './teamsWhereInput.schema';
+import { z } from 'zod'
+import { BigIntFilterObjectSchema } from './BigIntFilter.schema'
+import { StringFilterObjectSchema } from './StringFilter.schema'
+import { StringNullableFilterObjectSchema } from './StringNullableFilter.schema'
+import { DateTimeNullableFilterObjectSchema } from './DateTimeNullableFilter.schema'
+import { TeamsRelationFilterObjectSchema } from './TeamsRelationFilter.schema'
+import { teamsWhereInputObjectSchema } from './teamsWhereInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.team_invitationsWhereInput> = z
 	.object({
@@ -48,6 +48,6 @@ const Schema: z.ZodType<Prisma.team_invitationsWhereInput> = z
 			])
 			.optional()
 	})
-	.strict();
+	.strict()
 
-export const team_invitationsWhereInputObjectSchema = Schema;
+export const team_invitationsWhereInputObjectSchema = Schema

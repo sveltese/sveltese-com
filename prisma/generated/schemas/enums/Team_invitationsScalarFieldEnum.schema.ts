@@ -1,4 +1,4 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
 export const Team_invitationsScalarFieldEnumSchema = z.enum([
 	'id',
@@ -7,4 +7,4 @@ export const Team_invitationsScalarFieldEnumSchema = z.enum([
 	'role',
 	'created_at',
 	'updated_at'
-]);
+])

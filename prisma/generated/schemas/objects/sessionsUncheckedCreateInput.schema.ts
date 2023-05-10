@@ -1,6 +1,6 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.sessionsUncheckedCreateInput> = z
 	.object({
@@ -11,6 +11,6 @@ const Schema: z.ZodType<Prisma.sessionsUncheckedCreateInput> = z
 		payload: z.string(),
 		last_activity: z.number()
 	})
-	.strict();
+	.strict()
 
-export const sessionsUncheckedCreateInputObjectSchema = Schema;
+export const sessionsUncheckedCreateInputObjectSchema = Schema

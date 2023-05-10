@@ -1,8 +1,8 @@
-import { z } from 'zod';
-import { password_reset_tokensOrderByWithRelationInputObjectSchema } from './objects/password_reset_tokensOrderByWithRelationInput.schema';
-import { password_reset_tokensWhereInputObjectSchema } from './objects/password_reset_tokensWhereInput.schema';
-import { password_reset_tokensWhereUniqueInputObjectSchema } from './objects/password_reset_tokensWhereUniqueInput.schema';
-import { password_reset_tokensScalarFieldEnumSchema } from './enums/password_reset_tokensScalarFieldEnum.schema';
+import { z } from 'zod'
+import { password_reset_tokensOrderByWithRelationInputObjectSchema } from './objects/password_reset_tokensOrderByWithRelationInput.schema'
+import { password_reset_tokensWhereInputObjectSchema } from './objects/password_reset_tokensWhereInput.schema'
+import { password_reset_tokensWhereUniqueInputObjectSchema } from './objects/password_reset_tokensWhereUniqueInput.schema'
+import { password_reset_tokensScalarFieldEnumSchema } from './enums/password_reset_tokensScalarFieldEnum.schema'
 
 export const password_reset_tokensFindManySchema = z.object({
 	orderBy: z
@@ -16,4 +16,4 @@ export const password_reset_tokensFindManySchema = z.object({
 	take: z.number().optional(),
 	skip: z.number().optional(),
 	distinct: z.array(password_reset_tokensScalarFieldEnumSchema).optional()
-});
+})

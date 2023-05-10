@@ -1,8 +1,8 @@
-import { z } from 'zod';
-import { StringFieldUpdateOperationsInputObjectSchema } from './StringFieldUpdateOperationsInput.schema';
-import { NullableDateTimeFieldUpdateOperationsInputObjectSchema } from './NullableDateTimeFieldUpdateOperationsInput.schema';
+import { z } from 'zod'
+import { StringFieldUpdateOperationsInputObjectSchema } from './StringFieldUpdateOperationsInput.schema'
+import { NullableDateTimeFieldUpdateOperationsInputObjectSchema } from './NullableDateTimeFieldUpdateOperationsInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.password_reset_tokensUncheckedUpdateInput> = z
 	.object({
@@ -17,6 +17,6 @@ const Schema: z.ZodType<Prisma.password_reset_tokensUncheckedUpdateInput> = z
 			.optional()
 			.nullable()
 	})
-	.strict();
+	.strict()
 
-export const password_reset_tokensUncheckedUpdateInputObjectSchema = Schema;
+export const password_reset_tokensUncheckedUpdateInputObjectSchema = Schema

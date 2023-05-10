@@ -1,10 +1,10 @@
-import { z } from 'zod';
-import { BigIntFieldUpdateOperationsInputObjectSchema } from './BigIntFieldUpdateOperationsInput.schema';
-import { StringFieldUpdateOperationsInputObjectSchema } from './StringFieldUpdateOperationsInput.schema';
-import { NullableStringFieldUpdateOperationsInputObjectSchema } from './NullableStringFieldUpdateOperationsInput.schema';
-import { NullableDateTimeFieldUpdateOperationsInputObjectSchema } from './NullableDateTimeFieldUpdateOperationsInput.schema';
+import { z } from 'zod'
+import { BigIntFieldUpdateOperationsInputObjectSchema } from './BigIntFieldUpdateOperationsInput.schema'
+import { StringFieldUpdateOperationsInputObjectSchema } from './StringFieldUpdateOperationsInput.schema'
+import { NullableStringFieldUpdateOperationsInputObjectSchema } from './NullableStringFieldUpdateOperationsInput.schema'
+import { NullableDateTimeFieldUpdateOperationsInputObjectSchema } from './NullableDateTimeFieldUpdateOperationsInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.personal_access_tokensUpdateInput> = z
 	.object({
@@ -44,6 +44,6 @@ const Schema: z.ZodType<Prisma.personal_access_tokensUpdateInput> = z
 			.optional()
 			.nullable()
 	})
-	.strict();
+	.strict()
 
-export const personal_access_tokensUpdateInputObjectSchema = Schema;
+export const personal_access_tokensUpdateInputObjectSchema = Schema

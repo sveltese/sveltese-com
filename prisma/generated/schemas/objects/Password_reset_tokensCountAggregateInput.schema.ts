@@ -1,6 +1,6 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.Password_reset_tokensCountAggregateInputType> = z
 	.object({
@@ -9,6 +9,6 @@ const Schema: z.ZodType<Prisma.Password_reset_tokensCountAggregateInputType> = z
 		created_at: z.literal(true).optional(),
 		_all: z.literal(true).optional()
 	})
-	.strict();
+	.strict()
 
-export const Password_reset_tokensCountAggregateInputObjectSchema = Schema;
+export const Password_reset_tokensCountAggregateInputObjectSchema = Schema

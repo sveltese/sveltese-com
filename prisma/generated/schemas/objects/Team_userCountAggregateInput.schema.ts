@@ -1,6 +1,6 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.Team_userCountAggregateInputType> = z
 	.object({
@@ -12,6 +12,6 @@ const Schema: z.ZodType<Prisma.Team_userCountAggregateInputType> = z
 		updated_at: z.literal(true).optional(),
 		_all: z.literal(true).optional()
 	})
-	.strict();
+	.strict()
 
-export const Team_userCountAggregateInputObjectSchema = Schema;
+export const Team_userCountAggregateInputObjectSchema = Schema

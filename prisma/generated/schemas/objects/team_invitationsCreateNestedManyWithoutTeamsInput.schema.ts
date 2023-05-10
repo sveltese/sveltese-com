@@ -1,11 +1,11 @@
-import { z } from 'zod';
-import { team_invitationsCreateWithoutTeamsInputObjectSchema } from './team_invitationsCreateWithoutTeamsInput.schema';
-import { team_invitationsUncheckedCreateWithoutTeamsInputObjectSchema } from './team_invitationsUncheckedCreateWithoutTeamsInput.schema';
-import { team_invitationsCreateOrConnectWithoutTeamsInputObjectSchema } from './team_invitationsCreateOrConnectWithoutTeamsInput.schema';
-import { team_invitationsCreateManyTeamsInputEnvelopeObjectSchema } from './team_invitationsCreateManyTeamsInputEnvelope.schema';
-import { team_invitationsWhereUniqueInputObjectSchema } from './team_invitationsWhereUniqueInput.schema';
+import { z } from 'zod'
+import { team_invitationsCreateWithoutTeamsInputObjectSchema } from './team_invitationsCreateWithoutTeamsInput.schema'
+import { team_invitationsUncheckedCreateWithoutTeamsInputObjectSchema } from './team_invitationsUncheckedCreateWithoutTeamsInput.schema'
+import { team_invitationsCreateOrConnectWithoutTeamsInputObjectSchema } from './team_invitationsCreateOrConnectWithoutTeamsInput.schema'
+import { team_invitationsCreateManyTeamsInputEnvelopeObjectSchema } from './team_invitationsCreateManyTeamsInputEnvelope.schema'
+import { team_invitationsWhereUniqueInputObjectSchema } from './team_invitationsWhereUniqueInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.team_invitationsCreateNestedManyWithoutTeamsInput> = z
 	.object({
@@ -31,6 +31,6 @@ const Schema: z.ZodType<Prisma.team_invitationsCreateNestedManyWithoutTeamsInput
 			])
 			.optional()
 	})
-	.strict();
+	.strict()
 
-export const team_invitationsCreateNestedManyWithoutTeamsInputObjectSchema = Schema;
+export const team_invitationsCreateNestedManyWithoutTeamsInputObjectSchema = Schema

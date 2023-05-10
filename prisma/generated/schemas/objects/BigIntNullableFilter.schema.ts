@@ -1,7 +1,7 @@
-import { z } from 'zod';
-import { NestedBigIntNullableFilterObjectSchema } from './NestedBigIntNullableFilter.schema';
+import { z } from 'zod'
+import { NestedBigIntNullableFilterObjectSchema } from './NestedBigIntNullableFilter.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.BigIntNullableFilter> = z
 	.object({
@@ -17,6 +17,6 @@ const Schema: z.ZodType<Prisma.BigIntNullableFilter> = z
 			.optional()
 			.nullable()
 	})
-	.strict();
+	.strict()
 
-export const BigIntNullableFilterObjectSchema = Schema;
+export const BigIntNullableFilterObjectSchema = Schema

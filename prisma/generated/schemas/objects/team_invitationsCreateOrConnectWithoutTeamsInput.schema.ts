@@ -1,9 +1,9 @@
-import { z } from 'zod';
-import { team_invitationsWhereUniqueInputObjectSchema } from './team_invitationsWhereUniqueInput.schema';
-import { team_invitationsCreateWithoutTeamsInputObjectSchema } from './team_invitationsCreateWithoutTeamsInput.schema';
-import { team_invitationsUncheckedCreateWithoutTeamsInputObjectSchema } from './team_invitationsUncheckedCreateWithoutTeamsInput.schema';
+import { z } from 'zod'
+import { team_invitationsWhereUniqueInputObjectSchema } from './team_invitationsWhereUniqueInput.schema'
+import { team_invitationsCreateWithoutTeamsInputObjectSchema } from './team_invitationsCreateWithoutTeamsInput.schema'
+import { team_invitationsUncheckedCreateWithoutTeamsInputObjectSchema } from './team_invitationsUncheckedCreateWithoutTeamsInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.team_invitationsCreateOrConnectWithoutTeamsInput> = z
 	.object({
@@ -13,6 +13,6 @@ const Schema: z.ZodType<Prisma.team_invitationsCreateOrConnectWithoutTeamsInput>
 			z.lazy(() => team_invitationsUncheckedCreateWithoutTeamsInputObjectSchema)
 		])
 	})
-	.strict();
+	.strict()
 
-export const team_invitationsCreateOrConnectWithoutTeamsInputObjectSchema = Schema;
+export const team_invitationsCreateOrConnectWithoutTeamsInputObjectSchema = Schema

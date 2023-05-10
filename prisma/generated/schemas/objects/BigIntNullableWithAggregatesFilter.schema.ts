@@ -1,10 +1,10 @@
-import { z } from 'zod';
-import { NestedBigIntNullableWithAggregatesFilterObjectSchema } from './NestedBigIntNullableWithAggregatesFilter.schema';
-import { NestedIntNullableFilterObjectSchema } from './NestedIntNullableFilter.schema';
-import { NestedFloatNullableFilterObjectSchema } from './NestedFloatNullableFilter.schema';
-import { NestedBigIntNullableFilterObjectSchema } from './NestedBigIntNullableFilter.schema';
+import { z } from 'zod'
+import { NestedBigIntNullableWithAggregatesFilterObjectSchema } from './NestedBigIntNullableWithAggregatesFilter.schema'
+import { NestedIntNullableFilterObjectSchema } from './NestedIntNullableFilter.schema'
+import { NestedFloatNullableFilterObjectSchema } from './NestedFloatNullableFilter.schema'
+import { NestedBigIntNullableFilterObjectSchema } from './NestedBigIntNullableFilter.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.BigIntNullableWithAggregatesFilter> = z
 	.object({
@@ -25,6 +25,6 @@ const Schema: z.ZodType<Prisma.BigIntNullableWithAggregatesFilter> = z
 		_min: z.lazy(() => NestedBigIntNullableFilterObjectSchema).optional(),
 		_max: z.lazy(() => NestedBigIntNullableFilterObjectSchema).optional()
 	})
-	.strict();
+	.strict()
 
-export const BigIntNullableWithAggregatesFilterObjectSchema = Schema;
+export const BigIntNullableWithAggregatesFilterObjectSchema = Schema

@@ -1,11 +1,11 @@
-import { z } from 'zod';
-import { BigIntFilterObjectSchema } from './BigIntFilter.schema';
-import { StringFilterObjectSchema } from './StringFilter.schema';
-import { BoolFilterObjectSchema } from './BoolFilter.schema';
-import { DateTimeNullableFilterObjectSchema } from './DateTimeNullableFilter.schema';
-import { Team_invitationsListRelationFilterObjectSchema } from './Team_invitationsListRelationFilter.schema';
+import { z } from 'zod'
+import { BigIntFilterObjectSchema } from './BigIntFilter.schema'
+import { StringFilterObjectSchema } from './StringFilter.schema'
+import { BoolFilterObjectSchema } from './BoolFilter.schema'
+import { DateTimeNullableFilterObjectSchema } from './DateTimeNullableFilter.schema'
+import { Team_invitationsListRelationFilterObjectSchema } from './Team_invitationsListRelationFilter.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.teamsWhereInput> = z
 	.object({
@@ -39,6 +39,6 @@ const Schema: z.ZodType<Prisma.teamsWhereInput> = z
 			.nullable(),
 		team_invitations: z.lazy(() => Team_invitationsListRelationFilterObjectSchema).optional()
 	})
-	.strict();
+	.strict()
 
-export const teamsWhereInputObjectSchema = Schema;
+export const teamsWhereInputObjectSchema = Schema

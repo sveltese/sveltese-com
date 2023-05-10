@@ -1,11 +1,11 @@
-import { z } from 'zod';
-import { BigIntFieldUpdateOperationsInputObjectSchema } from './BigIntFieldUpdateOperationsInput.schema';
-import { StringFieldUpdateOperationsInputObjectSchema } from './StringFieldUpdateOperationsInput.schema';
-import { BoolFieldUpdateOperationsInputObjectSchema } from './BoolFieldUpdateOperationsInput.schema';
-import { NullableDateTimeFieldUpdateOperationsInputObjectSchema } from './NullableDateTimeFieldUpdateOperationsInput.schema';
-import { team_invitationsUncheckedUpdateManyWithoutTeamsNestedInputObjectSchema } from './team_invitationsUncheckedUpdateManyWithoutTeamsNestedInput.schema';
+import { z } from 'zod'
+import { BigIntFieldUpdateOperationsInputObjectSchema } from './BigIntFieldUpdateOperationsInput.schema'
+import { StringFieldUpdateOperationsInputObjectSchema } from './StringFieldUpdateOperationsInput.schema'
+import { BoolFieldUpdateOperationsInputObjectSchema } from './BoolFieldUpdateOperationsInput.schema'
+import { NullableDateTimeFieldUpdateOperationsInputObjectSchema } from './NullableDateTimeFieldUpdateOperationsInput.schema'
+import { team_invitationsUncheckedUpdateManyWithoutTeamsNestedInputObjectSchema } from './team_invitationsUncheckedUpdateManyWithoutTeamsNestedInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.teamsUncheckedUpdateInput> = z
 	.object({
@@ -33,6 +33,6 @@ const Schema: z.ZodType<Prisma.teamsUncheckedUpdateInput> = z
 			.lazy(() => team_invitationsUncheckedUpdateManyWithoutTeamsNestedInputObjectSchema)
 			.optional()
 	})
-	.strict();
+	.strict()
 
-export const teamsUncheckedUpdateInputObjectSchema = Schema;
+export const teamsUncheckedUpdateInputObjectSchema = Schema

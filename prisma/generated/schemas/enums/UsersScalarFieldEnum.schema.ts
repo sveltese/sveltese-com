@@ -1,4 +1,4 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
 export const UsersScalarFieldEnumSchema = z.enum([
 	'id',
@@ -14,4 +14,4 @@ export const UsersScalarFieldEnumSchema = z.enum([
 	'two_factor_secret',
 	'two_factor_recovery_codes',
 	'two_factor_confirmed_at'
-]);
+])

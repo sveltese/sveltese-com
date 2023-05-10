@@ -1,7 +1,7 @@
-import { z } from 'zod';
-import { NestedBigIntFilterObjectSchema } from './NestedBigIntFilter.schema';
+import { z } from 'zod'
+import { NestedBigIntFilterObjectSchema } from './NestedBigIntFilter.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.BigIntFilter> = z
 	.object({
@@ -14,6 +14,6 @@ const Schema: z.ZodType<Prisma.BigIntFilter> = z
 		gte: z.bigint().optional(),
 		not: z.union([z.bigint(), z.lazy(() => NestedBigIntFilterObjectSchema)]).optional()
 	})
-	.strict();
+	.strict()
 
-export const BigIntFilterObjectSchema = Schema;
+export const BigIntFilterObjectSchema = Schema

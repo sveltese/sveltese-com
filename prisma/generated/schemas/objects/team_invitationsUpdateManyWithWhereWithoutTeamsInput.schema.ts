@@ -1,9 +1,9 @@
-import { z } from 'zod';
-import { team_invitationsScalarWhereInputObjectSchema } from './team_invitationsScalarWhereInput.schema';
-import { team_invitationsUpdateManyMutationInputObjectSchema } from './team_invitationsUpdateManyMutationInput.schema';
-import { team_invitationsUncheckedUpdateManyWithoutTeam_invitationsInputObjectSchema } from './team_invitationsUncheckedUpdateManyWithoutTeam_invitationsInput.schema';
+import { z } from 'zod'
+import { team_invitationsScalarWhereInputObjectSchema } from './team_invitationsScalarWhereInput.schema'
+import { team_invitationsUpdateManyMutationInputObjectSchema } from './team_invitationsUpdateManyMutationInput.schema'
+import { team_invitationsUncheckedUpdateManyWithoutTeam_invitationsInputObjectSchema } from './team_invitationsUncheckedUpdateManyWithoutTeam_invitationsInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.team_invitationsUpdateManyWithWhereWithoutTeamsInput> = z
 	.object({
@@ -13,6 +13,6 @@ const Schema: z.ZodType<Prisma.team_invitationsUpdateManyWithWhereWithoutTeamsIn
 			z.lazy(() => team_invitationsUncheckedUpdateManyWithoutTeam_invitationsInputObjectSchema)
 		])
 	})
-	.strict();
+	.strict()
 
-export const team_invitationsUpdateManyWithWhereWithoutTeamsInputObjectSchema = Schema;
+export const team_invitationsUpdateManyWithWhereWithoutTeamsInputObjectSchema = Schema

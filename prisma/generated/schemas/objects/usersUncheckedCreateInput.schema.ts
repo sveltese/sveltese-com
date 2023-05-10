@@ -1,6 +1,6 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.usersUncheckedCreateInput> = z
 	.object({
@@ -18,6 +18,6 @@ const Schema: z.ZodType<Prisma.usersUncheckedCreateInput> = z
 		two_factor_recovery_codes: z.string().optional().nullable(),
 		two_factor_confirmed_at: z.date().optional().nullable()
 	})
-	.strict();
+	.strict()
 
-export const usersUncheckedCreateInputObjectSchema = Schema;
+export const usersUncheckedCreateInputObjectSchema = Schema

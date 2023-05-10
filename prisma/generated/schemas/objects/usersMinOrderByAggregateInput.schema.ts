@@ -1,7 +1,7 @@
-import { z } from 'zod';
-import { SortOrderSchema } from '../enums/SortOrder.schema';
+import { z } from 'zod'
+import { SortOrderSchema } from '../enums/SortOrder.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.usersMinOrderByAggregateInput> = z
 	.object({
@@ -19,6 +19,6 @@ const Schema: z.ZodType<Prisma.usersMinOrderByAggregateInput> = z
 		two_factor_recovery_codes: z.lazy(() => SortOrderSchema).optional(),
 		two_factor_confirmed_at: z.lazy(() => SortOrderSchema).optional()
 	})
-	.strict();
+	.strict()
 
-export const usersMinOrderByAggregateInputObjectSchema = Schema;
+export const usersMinOrderByAggregateInputObjectSchema = Schema

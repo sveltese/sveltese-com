@@ -1,6 +1,6 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.Personal_access_tokensCountAggregateInputType> = z
 	.object({
@@ -16,6 +16,6 @@ const Schema: z.ZodType<Prisma.Personal_access_tokensCountAggregateInputType> = 
 		updated_at: z.literal(true).optional(),
 		_all: z.literal(true).optional()
 	})
-	.strict();
+	.strict()
 
-export const Personal_access_tokensCountAggregateInputObjectSchema = Schema;
+export const Personal_access_tokensCountAggregateInputObjectSchema = Schema

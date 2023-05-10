@@ -1,8 +1,8 @@
-import { z } from 'zod';
-import { SortOrderSchema } from '../enums/SortOrder.schema';
-import { teamsOrderByWithRelationInputObjectSchema } from './teamsOrderByWithRelationInput.schema';
+import { z } from 'zod'
+import { SortOrderSchema } from '../enums/SortOrder.schema'
+import { teamsOrderByWithRelationInputObjectSchema } from './teamsOrderByWithRelationInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.team_invitationsOrderByWithRelationInput> = z
 	.object({
@@ -14,6 +14,6 @@ const Schema: z.ZodType<Prisma.team_invitationsOrderByWithRelationInput> = z
 		updated_at: z.lazy(() => SortOrderSchema).optional(),
 		teams: z.lazy(() => teamsOrderByWithRelationInputObjectSchema).optional()
 	})
-	.strict();
+	.strict()
 
-export const team_invitationsOrderByWithRelationInputObjectSchema = Schema;
+export const team_invitationsOrderByWithRelationInputObjectSchema = Schema

@@ -1,11 +1,11 @@
-import { z } from 'zod';
-import { BigIntFieldUpdateOperationsInputObjectSchema } from './BigIntFieldUpdateOperationsInput.schema';
-import { StringFieldUpdateOperationsInputObjectSchema } from './StringFieldUpdateOperationsInput.schema';
-import { NullableStringFieldUpdateOperationsInputObjectSchema } from './NullableStringFieldUpdateOperationsInput.schema';
-import { NullableDateTimeFieldUpdateOperationsInputObjectSchema } from './NullableDateTimeFieldUpdateOperationsInput.schema';
-import { teamsUpdateOneRequiredWithoutTeam_invitationsNestedInputObjectSchema } from './teamsUpdateOneRequiredWithoutTeam_invitationsNestedInput.schema';
+import { z } from 'zod'
+import { BigIntFieldUpdateOperationsInputObjectSchema } from './BigIntFieldUpdateOperationsInput.schema'
+import { StringFieldUpdateOperationsInputObjectSchema } from './StringFieldUpdateOperationsInput.schema'
+import { NullableStringFieldUpdateOperationsInputObjectSchema } from './NullableStringFieldUpdateOperationsInput.schema'
+import { NullableDateTimeFieldUpdateOperationsInputObjectSchema } from './NullableDateTimeFieldUpdateOperationsInput.schema'
+import { teamsUpdateOneRequiredWithoutTeam_invitationsNestedInputObjectSchema } from './teamsUpdateOneRequiredWithoutTeam_invitationsNestedInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.team_invitationsUpdateInput> = z
 	.object({
@@ -31,6 +31,6 @@ const Schema: z.ZodType<Prisma.team_invitationsUpdateInput> = z
 			.lazy(() => teamsUpdateOneRequiredWithoutTeam_invitationsNestedInputObjectSchema)
 			.optional()
 	})
-	.strict();
+	.strict()
 
-export const team_invitationsUpdateInputObjectSchema = Schema;
+export const team_invitationsUpdateInputObjectSchema = Schema

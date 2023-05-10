@@ -1,10 +1,10 @@
-import { z } from 'zod';
-import { BigIntFieldUpdateOperationsInputObjectSchema } from './BigIntFieldUpdateOperationsInput.schema';
-import { StringFieldUpdateOperationsInputObjectSchema } from './StringFieldUpdateOperationsInput.schema';
-import { BoolFieldUpdateOperationsInputObjectSchema } from './BoolFieldUpdateOperationsInput.schema';
-import { NullableDateTimeFieldUpdateOperationsInputObjectSchema } from './NullableDateTimeFieldUpdateOperationsInput.schema';
+import { z } from 'zod'
+import { BigIntFieldUpdateOperationsInputObjectSchema } from './BigIntFieldUpdateOperationsInput.schema'
+import { StringFieldUpdateOperationsInputObjectSchema } from './StringFieldUpdateOperationsInput.schema'
+import { BoolFieldUpdateOperationsInputObjectSchema } from './BoolFieldUpdateOperationsInput.schema'
+import { NullableDateTimeFieldUpdateOperationsInputObjectSchema } from './NullableDateTimeFieldUpdateOperationsInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.teamsUncheckedUpdateWithoutTeam_invitationsInput> = z
 	.object({
@@ -29,6 +29,6 @@ const Schema: z.ZodType<Prisma.teamsUncheckedUpdateWithoutTeam_invitationsInput>
 			.optional()
 			.nullable()
 	})
-	.strict();
+	.strict()
 
-export const teamsUncheckedUpdateWithoutTeam_invitationsInputObjectSchema = Schema;
+export const teamsUncheckedUpdateWithoutTeam_invitationsInputObjectSchema = Schema

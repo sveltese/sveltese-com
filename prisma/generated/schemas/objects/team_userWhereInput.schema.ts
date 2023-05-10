@@ -1,9 +1,9 @@
-import { z } from 'zod';
-import { BigIntFilterObjectSchema } from './BigIntFilter.schema';
-import { StringNullableFilterObjectSchema } from './StringNullableFilter.schema';
-import { DateTimeNullableFilterObjectSchema } from './DateTimeNullableFilter.schema';
+import { z } from 'zod'
+import { BigIntFilterObjectSchema } from './BigIntFilter.schema'
+import { StringNullableFilterObjectSchema } from './StringNullableFilter.schema'
+import { DateTimeNullableFilterObjectSchema } from './DateTimeNullableFilter.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.team_userWhereInput> = z
 	.object({
@@ -39,6 +39,6 @@ const Schema: z.ZodType<Prisma.team_userWhereInput> = z
 			.optional()
 			.nullable()
 	})
-	.strict();
+	.strict()
 
-export const team_userWhereInputObjectSchema = Schema;
+export const team_userWhereInputObjectSchema = Schema

@@ -1,8 +1,8 @@
-import { z } from 'zod';
-import { StringFilterObjectSchema } from './StringFilter.schema';
-import { DateTimeNullableFilterObjectSchema } from './DateTimeNullableFilter.schema';
+import { z } from 'zod'
+import { StringFilterObjectSchema } from './StringFilter.schema'
+import { DateTimeNullableFilterObjectSchema } from './DateTimeNullableFilter.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.password_reset_tokensWhereInput> = z
 	.object({
@@ -29,6 +29,6 @@ const Schema: z.ZodType<Prisma.password_reset_tokensWhereInput> = z
 			.optional()
 			.nullable()
 	})
-	.strict();
+	.strict()
 
-export const password_reset_tokensWhereInputObjectSchema = Schema;
+export const password_reset_tokensWhereInputObjectSchema = Schema

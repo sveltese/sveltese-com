@@ -1,6 +1,6 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.password_reset_tokensUncheckedCreateInput> = z
 	.object({
@@ -8,6 +8,6 @@ const Schema: z.ZodType<Prisma.password_reset_tokensUncheckedCreateInput> = z
 		token: z.string(),
 		created_at: z.date().optional().nullable()
 	})
-	.strict();
+	.strict()
 
-export const password_reset_tokensUncheckedCreateInputObjectSchema = Schema;
+export const password_reset_tokensUncheckedCreateInputObjectSchema = Schema

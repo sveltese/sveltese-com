@@ -1,12 +1,12 @@
-import { z } from 'zod';
-import { SortOrderSchema } from '../enums/SortOrder.schema';
-import { usersCountOrderByAggregateInputObjectSchema } from './usersCountOrderByAggregateInput.schema';
-import { usersAvgOrderByAggregateInputObjectSchema } from './usersAvgOrderByAggregateInput.schema';
-import { usersMaxOrderByAggregateInputObjectSchema } from './usersMaxOrderByAggregateInput.schema';
-import { usersMinOrderByAggregateInputObjectSchema } from './usersMinOrderByAggregateInput.schema';
-import { usersSumOrderByAggregateInputObjectSchema } from './usersSumOrderByAggregateInput.schema';
+import { z } from 'zod'
+import { SortOrderSchema } from '../enums/SortOrder.schema'
+import { usersCountOrderByAggregateInputObjectSchema } from './usersCountOrderByAggregateInput.schema'
+import { usersAvgOrderByAggregateInputObjectSchema } from './usersAvgOrderByAggregateInput.schema'
+import { usersMaxOrderByAggregateInputObjectSchema } from './usersMaxOrderByAggregateInput.schema'
+import { usersMinOrderByAggregateInputObjectSchema } from './usersMinOrderByAggregateInput.schema'
+import { usersSumOrderByAggregateInputObjectSchema } from './usersSumOrderByAggregateInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.usersOrderByWithAggregationInput> = z
 	.object({
@@ -29,6 +29,6 @@ const Schema: z.ZodType<Prisma.usersOrderByWithAggregationInput> = z
 		_min: z.lazy(() => usersMinOrderByAggregateInputObjectSchema).optional(),
 		_sum: z.lazy(() => usersSumOrderByAggregateInputObjectSchema).optional()
 	})
-	.strict();
+	.strict()
 
-export const usersOrderByWithAggregationInputObjectSchema = Schema;
+export const usersOrderByWithAggregationInputObjectSchema = Schema

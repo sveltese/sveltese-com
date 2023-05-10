@@ -1,12 +1,12 @@
-import { z } from 'zod';
-import { SortOrderSchema } from '../enums/SortOrder.schema';
-import { team_invitationsCountOrderByAggregateInputObjectSchema } from './team_invitationsCountOrderByAggregateInput.schema';
-import { team_invitationsAvgOrderByAggregateInputObjectSchema } from './team_invitationsAvgOrderByAggregateInput.schema';
-import { team_invitationsMaxOrderByAggregateInputObjectSchema } from './team_invitationsMaxOrderByAggregateInput.schema';
-import { team_invitationsMinOrderByAggregateInputObjectSchema } from './team_invitationsMinOrderByAggregateInput.schema';
-import { team_invitationsSumOrderByAggregateInputObjectSchema } from './team_invitationsSumOrderByAggregateInput.schema';
+import { z } from 'zod'
+import { SortOrderSchema } from '../enums/SortOrder.schema'
+import { team_invitationsCountOrderByAggregateInputObjectSchema } from './team_invitationsCountOrderByAggregateInput.schema'
+import { team_invitationsAvgOrderByAggregateInputObjectSchema } from './team_invitationsAvgOrderByAggregateInput.schema'
+import { team_invitationsMaxOrderByAggregateInputObjectSchema } from './team_invitationsMaxOrderByAggregateInput.schema'
+import { team_invitationsMinOrderByAggregateInputObjectSchema } from './team_invitationsMinOrderByAggregateInput.schema'
+import { team_invitationsSumOrderByAggregateInputObjectSchema } from './team_invitationsSumOrderByAggregateInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.team_invitationsOrderByWithAggregationInput> = z
 	.object({
@@ -22,6 +22,6 @@ const Schema: z.ZodType<Prisma.team_invitationsOrderByWithAggregationInput> = z
 		_min: z.lazy(() => team_invitationsMinOrderByAggregateInputObjectSchema).optional(),
 		_sum: z.lazy(() => team_invitationsSumOrderByAggregateInputObjectSchema).optional()
 	})
-	.strict();
+	.strict()
 
-export const team_invitationsOrderByWithAggregationInputObjectSchema = Schema;
+export const team_invitationsOrderByWithAggregationInputObjectSchema = Schema

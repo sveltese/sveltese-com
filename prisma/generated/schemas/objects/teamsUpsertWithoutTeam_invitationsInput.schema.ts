@@ -1,10 +1,10 @@
-import { z } from 'zod';
-import { teamsUpdateWithoutTeam_invitationsInputObjectSchema } from './teamsUpdateWithoutTeam_invitationsInput.schema';
-import { teamsUncheckedUpdateWithoutTeam_invitationsInputObjectSchema } from './teamsUncheckedUpdateWithoutTeam_invitationsInput.schema';
-import { teamsCreateWithoutTeam_invitationsInputObjectSchema } from './teamsCreateWithoutTeam_invitationsInput.schema';
-import { teamsUncheckedCreateWithoutTeam_invitationsInputObjectSchema } from './teamsUncheckedCreateWithoutTeam_invitationsInput.schema';
+import { z } from 'zod'
+import { teamsUpdateWithoutTeam_invitationsInputObjectSchema } from './teamsUpdateWithoutTeam_invitationsInput.schema'
+import { teamsUncheckedUpdateWithoutTeam_invitationsInputObjectSchema } from './teamsUncheckedUpdateWithoutTeam_invitationsInput.schema'
+import { teamsCreateWithoutTeam_invitationsInputObjectSchema } from './teamsCreateWithoutTeam_invitationsInput.schema'
+import { teamsUncheckedCreateWithoutTeam_invitationsInputObjectSchema } from './teamsUncheckedCreateWithoutTeam_invitationsInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.teamsUpsertWithoutTeam_invitationsInput> = z
 	.object({
@@ -17,6 +17,6 @@ const Schema: z.ZodType<Prisma.teamsUpsertWithoutTeam_invitationsInput> = z
 			z.lazy(() => teamsUncheckedCreateWithoutTeam_invitationsInputObjectSchema)
 		])
 	})
-	.strict();
+	.strict()
 
-export const teamsUpsertWithoutTeam_invitationsInputObjectSchema = Schema;
+export const teamsUpsertWithoutTeam_invitationsInputObjectSchema = Schema

@@ -1,10 +1,10 @@
-import { z } from 'zod';
-import { BigIntWithAggregatesFilterObjectSchema } from './BigIntWithAggregatesFilter.schema';
-import { StringWithAggregatesFilterObjectSchema } from './StringWithAggregatesFilter.schema';
-import { BoolWithAggregatesFilterObjectSchema } from './BoolWithAggregatesFilter.schema';
-import { DateTimeNullableWithAggregatesFilterObjectSchema } from './DateTimeNullableWithAggregatesFilter.schema';
+import { z } from 'zod'
+import { BigIntWithAggregatesFilterObjectSchema } from './BigIntWithAggregatesFilter.schema'
+import { StringWithAggregatesFilterObjectSchema } from './StringWithAggregatesFilter.schema'
+import { BoolWithAggregatesFilterObjectSchema } from './BoolWithAggregatesFilter.schema'
+import { DateTimeNullableWithAggregatesFilterObjectSchema } from './DateTimeNullableWithAggregatesFilter.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.teamsScalarWhereWithAggregatesInput> = z
 	.object({
@@ -39,6 +39,6 @@ const Schema: z.ZodType<Prisma.teamsScalarWhereWithAggregatesInput> = z
 			.optional()
 			.nullable()
 	})
-	.strict();
+	.strict()
 
-export const teamsScalarWhereWithAggregatesInputObjectSchema = Schema;
+export const teamsScalarWhereWithAggregatesInputObjectSchema = Schema

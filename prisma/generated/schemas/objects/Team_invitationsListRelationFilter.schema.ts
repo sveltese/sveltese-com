@@ -1,7 +1,7 @@
-import { z } from 'zod';
-import { team_invitationsWhereInputObjectSchema } from './team_invitationsWhereInput.schema';
+import { z } from 'zod'
+import { team_invitationsWhereInputObjectSchema } from './team_invitationsWhereInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.Team_invitationsListRelationFilter> = z
 	.object({
@@ -9,6 +9,6 @@ const Schema: z.ZodType<Prisma.Team_invitationsListRelationFilter> = z
 		some: z.lazy(() => team_invitationsWhereInputObjectSchema).optional(),
 		none: z.lazy(() => team_invitationsWhereInputObjectSchema).optional()
 	})
-	.strict();
+	.strict()
 
-export const Team_invitationsListRelationFilterObjectSchema = Schema;
+export const Team_invitationsListRelationFilterObjectSchema = Schema

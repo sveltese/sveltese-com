@@ -1,7 +1,7 @@
-import { z } from 'zod';
-import { team_invitationsCreateManyTeamsInputObjectSchema } from './team_invitationsCreateManyTeamsInput.schema';
+import { z } from 'zod'
+import { team_invitationsCreateManyTeamsInputObjectSchema } from './team_invitationsCreateManyTeamsInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.team_invitationsCreateManyTeamsInputEnvelope> = z
 	.object({
@@ -11,6 +11,6 @@ const Schema: z.ZodType<Prisma.team_invitationsCreateManyTeamsInputEnvelope> = z
 		]),
 		skipDuplicates: z.boolean().optional()
 	})
-	.strict();
+	.strict()
 
-export const team_invitationsCreateManyTeamsInputEnvelopeObjectSchema = Schema;
+export const team_invitationsCreateManyTeamsInputEnvelopeObjectSchema = Schema

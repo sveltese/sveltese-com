@@ -1,8 +1,8 @@
-import { z } from 'zod';
-import { StringWithAggregatesFilterObjectSchema } from './StringWithAggregatesFilter.schema';
-import { DateTimeNullableWithAggregatesFilterObjectSchema } from './DateTimeNullableWithAggregatesFilter.schema';
+import { z } from 'zod'
+import { StringWithAggregatesFilterObjectSchema } from './StringWithAggregatesFilter.schema'
+import { DateTimeNullableWithAggregatesFilterObjectSchema } from './DateTimeNullableWithAggregatesFilter.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.password_reset_tokensScalarWhereWithAggregatesInput> = z
 	.object({
@@ -29,6 +29,6 @@ const Schema: z.ZodType<Prisma.password_reset_tokensScalarWhereWithAggregatesInp
 			.optional()
 			.nullable()
 	})
-	.strict();
+	.strict()
 
-export const password_reset_tokensScalarWhereWithAggregatesInputObjectSchema = Schema;
+export const password_reset_tokensScalarWhereWithAggregatesInputObjectSchema = Schema

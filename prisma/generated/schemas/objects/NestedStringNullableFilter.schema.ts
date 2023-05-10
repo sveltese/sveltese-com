@@ -1,6 +1,6 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.NestedStringNullableFilter> = z
 	.object({
@@ -19,6 +19,6 @@ const Schema: z.ZodType<Prisma.NestedStringNullableFilter> = z
 			.optional()
 			.nullable()
 	})
-	.strict();
+	.strict()
 
-export const NestedStringNullableFilterObjectSchema = Schema;
+export const NestedStringNullableFilterObjectSchema = Schema

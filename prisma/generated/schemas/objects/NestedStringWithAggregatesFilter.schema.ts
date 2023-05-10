@@ -1,8 +1,8 @@
-import { z } from 'zod';
-import { NestedIntFilterObjectSchema } from './NestedIntFilter.schema';
-import { NestedStringFilterObjectSchema } from './NestedStringFilter.schema';
+import { z } from 'zod'
+import { NestedIntFilterObjectSchema } from './NestedIntFilter.schema'
+import { NestedStringFilterObjectSchema } from './NestedStringFilter.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.NestedStringWithAggregatesFilter> = z
 	.object({
@@ -23,6 +23,6 @@ const Schema: z.ZodType<Prisma.NestedStringWithAggregatesFilter> = z
 		_min: z.lazy(() => NestedStringFilterObjectSchema).optional(),
 		_max: z.lazy(() => NestedStringFilterObjectSchema).optional()
 	})
-	.strict();
+	.strict()
 
-export const NestedStringWithAggregatesFilterObjectSchema = Schema;
+export const NestedStringWithAggregatesFilterObjectSchema = Schema

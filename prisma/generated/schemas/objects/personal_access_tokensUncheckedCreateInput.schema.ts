@@ -1,6 +1,6 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.personal_access_tokensUncheckedCreateInput> = z
 	.object({
@@ -15,6 +15,6 @@ const Schema: z.ZodType<Prisma.personal_access_tokensUncheckedCreateInput> = z
 		created_at: z.date().optional().nullable(),
 		updated_at: z.date().optional().nullable()
 	})
-	.strict();
+	.strict()
 
-export const personal_access_tokensUncheckedCreateInputObjectSchema = Schema;
+export const personal_access_tokensUncheckedCreateInputObjectSchema = Schema

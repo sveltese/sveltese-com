@@ -1,13 +1,13 @@
-import { z } from 'zod';
-import { NestedBoolFilterObjectSchema } from './NestedBoolFilter.schema';
+import { z } from 'zod'
+import { NestedBoolFilterObjectSchema } from './NestedBoolFilter.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.BoolFilter> = z
 	.object({
 		equals: z.boolean().optional(),
 		not: z.union([z.boolean(), z.lazy(() => NestedBoolFilterObjectSchema)]).optional()
 	})
-	.strict();
+	.strict()
 
-export const BoolFilterObjectSchema = Schema;
+export const BoolFilterObjectSchema = Schema

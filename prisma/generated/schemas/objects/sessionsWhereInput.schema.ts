@@ -1,10 +1,10 @@
-import { z } from 'zod';
-import { StringFilterObjectSchema } from './StringFilter.schema';
-import { BigIntNullableFilterObjectSchema } from './BigIntNullableFilter.schema';
-import { StringNullableFilterObjectSchema } from './StringNullableFilter.schema';
-import { IntFilterObjectSchema } from './IntFilter.schema';
+import { z } from 'zod'
+import { StringFilterObjectSchema } from './StringFilter.schema'
+import { BigIntNullableFilterObjectSchema } from './BigIntNullableFilter.schema'
+import { StringNullableFilterObjectSchema } from './StringNullableFilter.schema'
+import { IntFilterObjectSchema } from './IntFilter.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.sessionsWhereInput> = z
 	.object({
@@ -40,6 +40,6 @@ const Schema: z.ZodType<Prisma.sessionsWhereInput> = z
 		payload: z.union([z.lazy(() => StringFilterObjectSchema), z.string()]).optional(),
 		last_activity: z.union([z.lazy(() => IntFilterObjectSchema), z.number()]).optional()
 	})
-	.strict();
+	.strict()
 
-export const sessionsWhereInputObjectSchema = Schema;
+export const sessionsWhereInputObjectSchema = Schema

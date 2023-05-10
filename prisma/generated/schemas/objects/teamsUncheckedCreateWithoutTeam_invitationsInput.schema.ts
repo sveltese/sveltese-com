@@ -1,6 +1,6 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.teamsUncheckedCreateWithoutTeam_invitationsInput> = z
 	.object({
@@ -11,6 +11,6 @@ const Schema: z.ZodType<Prisma.teamsUncheckedCreateWithoutTeam_invitationsInput>
 		created_at: z.date().optional().nullable(),
 		updated_at: z.date().optional().nullable()
 	})
-	.strict();
+	.strict()
 
-export const teamsUncheckedCreateWithoutTeam_invitationsInputObjectSchema = Schema;
+export const teamsUncheckedCreateWithoutTeam_invitationsInputObjectSchema = Schema

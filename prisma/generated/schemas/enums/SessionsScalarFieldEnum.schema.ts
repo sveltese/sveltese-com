@@ -1,4 +1,4 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
 export const SessionsScalarFieldEnumSchema = z.enum([
 	'id',
@@ -7,4 +7,4 @@ export const SessionsScalarFieldEnumSchema = z.enum([
 	'user_agent',
 	'payload',
 	'last_activity'
-]);
+])

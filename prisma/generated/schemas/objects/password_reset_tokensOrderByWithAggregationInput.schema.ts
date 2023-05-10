@@ -1,10 +1,10 @@
-import { z } from 'zod';
-import { SortOrderSchema } from '../enums/SortOrder.schema';
-import { password_reset_tokensCountOrderByAggregateInputObjectSchema } from './password_reset_tokensCountOrderByAggregateInput.schema';
-import { password_reset_tokensMaxOrderByAggregateInputObjectSchema } from './password_reset_tokensMaxOrderByAggregateInput.schema';
-import { password_reset_tokensMinOrderByAggregateInputObjectSchema } from './password_reset_tokensMinOrderByAggregateInput.schema';
+import { z } from 'zod'
+import { SortOrderSchema } from '../enums/SortOrder.schema'
+import { password_reset_tokensCountOrderByAggregateInputObjectSchema } from './password_reset_tokensCountOrderByAggregateInput.schema'
+import { password_reset_tokensMaxOrderByAggregateInputObjectSchema } from './password_reset_tokensMaxOrderByAggregateInput.schema'
+import { password_reset_tokensMinOrderByAggregateInputObjectSchema } from './password_reset_tokensMinOrderByAggregateInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.password_reset_tokensOrderByWithAggregationInput> = z
 	.object({
@@ -15,6 +15,6 @@ const Schema: z.ZodType<Prisma.password_reset_tokensOrderByWithAggregationInput>
 		_max: z.lazy(() => password_reset_tokensMaxOrderByAggregateInputObjectSchema).optional(),
 		_min: z.lazy(() => password_reset_tokensMinOrderByAggregateInputObjectSchema).optional()
 	})
-	.strict();
+	.strict()
 
-export const password_reset_tokensOrderByWithAggregationInputObjectSchema = Schema;
+export const password_reset_tokensOrderByWithAggregationInputObjectSchema = Schema

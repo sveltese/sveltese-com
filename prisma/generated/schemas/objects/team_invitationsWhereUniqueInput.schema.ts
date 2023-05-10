@@ -1,7 +1,7 @@
-import { z } from 'zod';
-import { team_invitationsTeam_idEmailCompoundUniqueInputObjectSchema } from './team_invitationsTeam_idEmailCompoundUniqueInput.schema';
+import { z } from 'zod'
+import { team_invitationsTeam_idEmailCompoundUniqueInputObjectSchema } from './team_invitationsTeam_idEmailCompoundUniqueInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.team_invitationsWhereUniqueInput> = z
 	.object({
@@ -10,6 +10,6 @@ const Schema: z.ZodType<Prisma.team_invitationsWhereUniqueInput> = z
 			.lazy(() => team_invitationsTeam_idEmailCompoundUniqueInputObjectSchema)
 			.optional()
 	})
-	.strict();
+	.strict()
 
-export const team_invitationsWhereUniqueInputObjectSchema = Schema;
+export const team_invitationsWhereUniqueInputObjectSchema = Schema

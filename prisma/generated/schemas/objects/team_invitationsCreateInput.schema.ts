@@ -1,7 +1,7 @@
-import { z } from 'zod';
-import { teamsCreateNestedOneWithoutTeam_invitationsInputObjectSchema } from './teamsCreateNestedOneWithoutTeam_invitationsInput.schema';
+import { z } from 'zod'
+import { teamsCreateNestedOneWithoutTeam_invitationsInputObjectSchema } from './teamsCreateNestedOneWithoutTeam_invitationsInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.team_invitationsCreateInput> = z
 	.object({
@@ -12,6 +12,6 @@ const Schema: z.ZodType<Prisma.team_invitationsCreateInput> = z
 		updated_at: z.date().optional().nullable(),
 		teams: z.lazy(() => teamsCreateNestedOneWithoutTeam_invitationsInputObjectSchema)
 	})
-	.strict();
+	.strict()
 
-export const team_invitationsCreateInputObjectSchema = Schema;
+export const team_invitationsCreateInputObjectSchema = Schema

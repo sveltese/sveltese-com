@@ -1,10 +1,10 @@
-import { z } from 'zod';
-import { StringFieldUpdateOperationsInputObjectSchema } from './StringFieldUpdateOperationsInput.schema';
-import { NullableBigIntFieldUpdateOperationsInputObjectSchema } from './NullableBigIntFieldUpdateOperationsInput.schema';
-import { NullableStringFieldUpdateOperationsInputObjectSchema } from './NullableStringFieldUpdateOperationsInput.schema';
-import { IntFieldUpdateOperationsInputObjectSchema } from './IntFieldUpdateOperationsInput.schema';
+import { z } from 'zod'
+import { StringFieldUpdateOperationsInputObjectSchema } from './StringFieldUpdateOperationsInput.schema'
+import { NullableBigIntFieldUpdateOperationsInputObjectSchema } from './NullableBigIntFieldUpdateOperationsInput.schema'
+import { NullableStringFieldUpdateOperationsInputObjectSchema } from './NullableStringFieldUpdateOperationsInput.schema'
+import { IntFieldUpdateOperationsInputObjectSchema } from './IntFieldUpdateOperationsInput.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.sessionsUncheckedUpdateInput> = z
 	.object({
@@ -30,6 +30,6 @@ const Schema: z.ZodType<Prisma.sessionsUncheckedUpdateInput> = z
 			.union([z.number(), z.lazy(() => IntFieldUpdateOperationsInputObjectSchema)])
 			.optional()
 	})
-	.strict();
+	.strict()
 
-export const sessionsUncheckedUpdateInputObjectSchema = Schema;
+export const sessionsUncheckedUpdateInputObjectSchema = Schema

@@ -1,7 +1,7 @@
-import { z } from 'zod';
-import { SortOrderSchema } from '../enums/SortOrder.schema';
+import { z } from 'zod'
+import { SortOrderSchema } from '../enums/SortOrder.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.password_reset_tokensOrderByWithRelationInput> = z
 	.object({
@@ -9,6 +9,6 @@ const Schema: z.ZodType<Prisma.password_reset_tokensOrderByWithRelationInput> = 
 		token: z.lazy(() => SortOrderSchema).optional(),
 		created_at: z.lazy(() => SortOrderSchema).optional()
 	})
-	.strict();
+	.strict()
 
-export const password_reset_tokensOrderByWithRelationInputObjectSchema = Schema;
+export const password_reset_tokensOrderByWithRelationInputObjectSchema = Schema

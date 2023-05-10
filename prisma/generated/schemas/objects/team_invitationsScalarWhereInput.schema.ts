@@ -1,10 +1,10 @@
-import { z } from 'zod';
-import { BigIntFilterObjectSchema } from './BigIntFilter.schema';
-import { StringFilterObjectSchema } from './StringFilter.schema';
-import { StringNullableFilterObjectSchema } from './StringNullableFilter.schema';
-import { DateTimeNullableFilterObjectSchema } from './DateTimeNullableFilter.schema';
+import { z } from 'zod'
+import { BigIntFilterObjectSchema } from './BigIntFilter.schema'
+import { StringFilterObjectSchema } from './StringFilter.schema'
+import { StringNullableFilterObjectSchema } from './StringNullableFilter.schema'
+import { DateTimeNullableFilterObjectSchema } from './DateTimeNullableFilter.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.team_invitationsScalarWhereInput> = z
 	.object({
@@ -40,6 +40,6 @@ const Schema: z.ZodType<Prisma.team_invitationsScalarWhereInput> = z
 			.optional()
 			.nullable()
 	})
-	.strict();
+	.strict()
 
-export const team_invitationsScalarWhereInputObjectSchema = Schema;
+export const team_invitationsScalarWhereInputObjectSchema = Schema

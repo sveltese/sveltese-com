@@ -1,4 +1,4 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
 export const Personal_access_tokensScalarFieldEnumSchema = z.enum([
 	'id',
@@ -11,4 +11,4 @@ export const Personal_access_tokensScalarFieldEnumSchema = z.enum([
 	'expires_at',
 	'created_at',
 	'updated_at'
-]);
+])

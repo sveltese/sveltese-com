@@ -1,10 +1,10 @@
-import { z } from 'zod';
-import { StringWithAggregatesFilterObjectSchema } from './StringWithAggregatesFilter.schema';
-import { BigIntNullableWithAggregatesFilterObjectSchema } from './BigIntNullableWithAggregatesFilter.schema';
-import { StringNullableWithAggregatesFilterObjectSchema } from './StringNullableWithAggregatesFilter.schema';
-import { IntWithAggregatesFilterObjectSchema } from './IntWithAggregatesFilter.schema';
+import { z } from 'zod'
+import { StringWithAggregatesFilterObjectSchema } from './StringWithAggregatesFilter.schema'
+import { BigIntNullableWithAggregatesFilterObjectSchema } from './BigIntNullableWithAggregatesFilter.schema'
+import { StringNullableWithAggregatesFilterObjectSchema } from './StringNullableWithAggregatesFilter.schema'
+import { IntWithAggregatesFilterObjectSchema } from './IntWithAggregatesFilter.schema'
 
-import type { Prisma } from '@prisma/client';
+import type { Prisma } from '@prisma/client'
 
 const Schema: z.ZodType<Prisma.sessionsScalarWhereWithAggregatesInput> = z
 	.object({
@@ -42,6 +42,6 @@ const Schema: z.ZodType<Prisma.sessionsScalarWhereWithAggregatesInput> = z
 			.union([z.lazy(() => IntWithAggregatesFilterObjectSchema), z.number()])
 			.optional()
 	})
-	.strict();
+	.strict()
 
-export const sessionsScalarWhereWithAggregatesInputObjectSchema = Schema;
+export const sessionsScalarWhereWithAggregatesInputObjectSchema = Schema
