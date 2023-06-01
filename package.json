@@ -11,8 +11,17 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:unit": "vitest",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
-	},
+		"format": "prettier --plugin-search-dir . --write .",
+    "prisma": "prisma generate && prisma migrate dev --name init --preview-feature",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init --preview-feature",
+    "prisma:studio": "prisma studio",
+    "prisma:reset": "prisma migrate reset --preview-feature",
+    "prisma:seed": "prisma db seed --preview-feature",
+    "prisma:push": "prisma migrate push --preview-feature"
+
+
+  },
 	"devDependencies": {
 		"@playwright/test": "^1.33.0",
 		"@sveltejs/adapter-auto": "^2.0.1",
