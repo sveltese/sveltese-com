@@ -56,6 +56,6 @@ Sveltese is heavily inspired by Laravel. It is designed to be a complete solutio
 Sveltese is available as an npm package. To install it, run the following command in your terminal:
 
 ```bash
-degit git@github.com:sveltese/sveltese
+$ degit git@github.com:sveltese/sveltese my-project
 
 ```
