@@ -43,10 +43,10 @@
 				type="password"
 				bind:value={$form.password}
 			/>
-			{#if $errors.password}
+			{#if $errors.password || $message}
 				<div class="mt-2">
 					<p class="text-sm text-red-600">
-						{$errors.password}
+						{$errors.password ?? $message}
 					</p>
 				</div>
 			{/if}

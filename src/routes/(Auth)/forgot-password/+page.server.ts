@@ -22,11 +22,12 @@ export const load = async (event) => {
 }
 
 async function findUserByEmail(email: string) {
-	const user = await prisma.users.findUnique({
+	const user = await prisma.authUser.findUnique({
 		where: {
 			email: email
 		}
 	})
+	console.log(user)
 
 	return user || false
 }

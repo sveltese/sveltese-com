@@ -12,16 +12,14 @@
 		"test:unit": "vitest",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
-    "prisma": "prisma generate && prisma migrate dev --name init --preview-feature",
-    "prisma:generate": "prisma generate",
-    "prisma:migrate": "prisma migrate dev --name init --preview-feature",
-    "prisma:studio": "prisma studio",
-    "prisma:reset": "prisma migrate reset --preview-feature",
-    "prisma:seed": "prisma db seed --preview-feature",
-    "prisma:push": "prisma migrate push --preview-feature"
-
-
-  },
+		"prisma": "prisma generate && prisma migrate dev --name init --preview-feature",
+		"prisma:generate": "prisma generate",
+		"prisma:migrate": "prisma migrate dev --name init --preview-feature",
+		"prisma:studio": "prisma studio",
+		"prisma:reset": "prisma migrate reset --preview-feature",
+		"prisma:seed": "prisma db seed --preview-feature",
+		"prisma:push": "prisma migrate push --preview-feature"
+	},
 	"devDependencies": {
 		"@playwright/test": "^1.33.0",
 		"@sveltejs/adapter-auto": "^2.0.1",
@@ -56,6 +54,7 @@
 	"type": "module",
 	"dependencies": {
 		"@lucia-auth/adapter-prisma": "^2.0.0",
+		"@lucia-auth/oauth": "^1.1.1",
 		"@prisma/client": "4.13.0",
 		"@vercel/analytics": "^1.0.1",
 		"lucia-auth": "^1.5.0",

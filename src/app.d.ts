@@ -20,7 +20,11 @@ declare global {
 declare global {
 	namespace Lucia {
 		type Auth = import('$lib/server/lucia').Auth
-		type UserAttributes = {}
+		type UserAttributes = {
+			email: string
+			name: string
+			avatar?: string
+		}
 	}
 }
 
