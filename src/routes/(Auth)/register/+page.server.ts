@@ -3,8 +3,8 @@ import { z } from 'zod'
 import { message, superValidate } from 'sveltekit-superforms/server'
 import { auth } from '$lib/server/lucia'
 import { prisma } from '$lib/server/prisma'
-import { emailClient } from '$lib/server/email'
-import { createHash, randomBytes } from 'node:crypto'
+// import { emailClient } from '$lib/server/email'
+// import { createHash, randomBytes } from 'node:crypto'
 
 const registerSchema = z
 	.object({
@@ -43,13 +43,13 @@ export const actions = {
 		}
 
 		// encrypt password
-		const hash = await createHash('sha256').update(form.data?.password).digest('hex')
+		// const hash = await createHash('sha256').update(form.data?.password).digest('hex')
 		try {
 			await auth.createUser({
 				primaryKey: {
 					providerId: 'email',
 					providerUserId: form.data.email,
-					password: hash
+					password: form.data.password
 				},
 				attributes: {
 					email: form.data.email,

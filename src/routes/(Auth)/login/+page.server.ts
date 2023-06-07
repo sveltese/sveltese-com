@@ -25,8 +25,9 @@ export const actions = {
 
 		try {
 			const email = form.data.email.toLocaleLowerCase()
-			const hash = await createHash('sha256').update(form.data?.password).digest('hex')
-			const key = await auth.useKey('email', email, hash)
+			const password = form.data.password
+			// const hash = await createHash('sha256').update(form.data?.password).digest('hex')
+			const key = await auth.useKey('email', email, password)
 			const session = await auth.createSession(key.userId)
 			event.locals.auth.setSession(session)
 		} catch (err) {
