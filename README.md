@@ -19,31 +19,62 @@ Sveltese is user-friendly, adaptable, and equips developers with the resources n
 
 NodeJS has come a long way since its inception, and it has become the de facto standard for building modern web applications. However, the NodeJS ecosystem is vast and fragmented, and it can be challenging to find the right tools and packages for your project. The process of setting up a new project can be time-consuming and tedious, and it often requires a steep learning curve. Furthermore, the NodeJS community is constantly evolving, and it can be difficult to keep up with the latest trends and best practices.
 
-The builder ecosystem is as vibrany as ever. Entire companies have been built around the idea of making it easier to build and maintain web applications. This is such a thriving space that it is difficult to keep up with the latest trends and best practices.
+The builder ecosystem is as vibrany as ever. Entire companies have been built around the idea of making it easier to build and maintain web applications. This is such a thriving space.
 
-By creating a defacto standard around the most promising tools and packages, we can make it easier for developers to get started with NodeJS and build full stack modern web applications with all the moving parts including:
+By creating a defacto standard around the most promising tools and packages, we can make it easier for developers to get started with NodeJS and build full stack, modern web applications with all the moving parts including:
 
 - Database
-- Queueing
-- Caching
+- Authentication
+- Migrations
 - Email
 - Boilerplate
+- Queueing ( coming soon )
+- Caching ( coming soon )
 
-We will focus on the best of the free solutions so that you can get up and running without having to pay for a bunch of services and hosting.
+We will focus on the best of the free solutions so that you can get up and running without having to pay for a bunch of services and hosting. We will also focus on packages that will run anywhere. We will not be focusing on packages that require a specific hosting provider.
 
-## The Solution
+## Requirements
 
-### Sveltese Bootcamp (coming soon)
+Sveltese is built on top of the SvelteKit framework, and it requires the following:
 
-Dive into the Sveltese Bootcamp, where you'll be guided step-by-step through the process of building a modern SvelteKit application from scratch, utilizing our tools and packages.
+- NodeJS >= 16.0.0
+- SvelteKit >= 1.0.0-next.151
 
-### SvelteseCasts (coming soon)
+## Recommendations
 
-If you prefer a more visual learning approach, SvelteseCasts is the perfect solution. Our platform features a vast collection of video tutorials covering topics such as SvelteKit, state management, UI components, and more. Enhance your skills and proficiency by exploring our comprehensive video library.
+### Postgresql
 
-### Sveltese Documentation (coming soon)
+The Svetelese template is configured to use a Postgresql database, running on localhost, by default. It is a powerful, open-source relational database that is easy to use and highly scalable. It is also the most popular database for SvelteKit applications. If you are new to Postgresql, we recommend using [Homebrew](https://brew.sh/) for macOS or [PostgresSQL](https://www.postgresql.org/download/) for Windows and Linux.
 
-The Sveltese documentation is a comprehensive resource that covers all aspects of the Sveltese framework and our tools. It includes detailed guides, API references, and tutorials for all skill levels.
+You can install a postgresql database using [Homebrew](https://brew.sh/) on macOS:
+
+```bash
+$ brew install postgresql
+```
+
+#### Changing the Database
+
+Currently the Sveltese template is configured to use a Postgresql database. If you would like to use a different database, you will need to update the `DATABASE_URL` environment variable in the `.env` file and the `schema.prisma` file.
+
+### Prisma
+
+Prisma is an open-source database toolkit that makes it easy to work with databases. It provides a type-safe API for building queries, and it supports multiple databases, including Postgresql, MySQL, and SQLite. It also provides a powerful migration tool that allows you to easily manage database schema changes.
+
+Prisma is installed with the initial Sveltese template, and it is used to manage the database. You can learn more about Prisma [here](https://www.prisma.io/).
+
+Several prisma commands have been written into the `package.json` file for convenience. You can run them using the following command:
+
+```bash
+$ pnpm run
+```
+
+### TailwindCSS
+
+TailwindCSS is a utility-first CSS framework that makes it easy to build responsive web applications. It provides a set of utility classes that can be used to style your application, and it includes a built-in dark mode that can be enabled with a single line of code.
+
+Tailwind is installed with the initial Sveltese template, and it is used to style the application. You can learn more about Tailwind [here](https://tailwindcss.com/).
+
+### Lucia
 
 ## Getting Started
 
@@ -71,13 +102,15 @@ DATABASE_URL="postgresql://sveltese:@localhost:5432/sveltese?schema=public"
 Back on the command line run the following command to initialize the database:
 
 ```bash
-pnpm prisma
+pnpm db:init
 ```
 
 Run the application using the following command:
 
 ```
-pnpm run dev
+pnpm dev
 ```
 
-## Workflow
+## Walkthrough
+
+Start up the project and open it in your browser. There are
