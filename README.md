@@ -33,8 +33,6 @@ We will focus on the best of the free solutions so that you can get up and runni
 
 ## The Solution
 
-
-
 ### Sveltese Bootcamp (coming soon)
 
 Dive into the Sveltese Bootcamp, where you'll be guided step-by-step through the process of building a modern SvelteKit application from scratch, utilizing our tools and packages.
@@ -57,5 +55,29 @@ Sveltese is available as an npm package. To install it, run the following comman
 
 ```bash
 $ degit git@github.com:sveltese/sveltese my-project
+$ cd my-project
+$ git init
+$ cp .env.example .env
+
 
 ```
+
+Open the `.env` file and update the database connection settings to match your local environment. For example:
+
+```bash
+DATABASE_URL="postgresql://sveltese:@localhost:5432/sveltese?schema=public"
+```
+
+Back on the command line run the following command to initialize the database:
+
+```bash
+pnpm prisma
+```
+
+Run the application using the following command:
+
+```
+pnpm run dev
+```
+
+## Workflow
