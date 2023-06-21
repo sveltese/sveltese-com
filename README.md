@@ -88,6 +88,7 @@ Sveltese is available as an npm package. To install it, run the following comman
 $ degit git@github.com:sveltese/sveltese my-project
 $ cd my-project
 $ git init
+$ pnpm install
 $ cp .env.example .env
 
 
