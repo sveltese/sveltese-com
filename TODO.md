@@ -1,13 +1,49 @@
 # TODO
 
-### Sveltese Bootcamp (coming soon)
+## Authentication
 
-Dive into the Sveltese Bootcamp, where you'll be guided step-by-step through the process of building a modern SvelteKit application from scratch, utilizing our tools and packages.
+- Add Logout
+- Add signin with Github
+- Clean up reset email
+- - remove svelte-email - probably not needed
+- Add mail pit to read me to show users of sveltese how to test email
+- Add email templates to read me
 
-### SvelteseCasts (coming soon)
+## Admin
 
-If you prefer a more visual learning approach, SvelteseCasts is the perfect solution. Our platform features a vast collection of video tutorials covering topics such as SvelteKit, state management, UI components, and more. Enhance your skills and proficiency by exploring our comprehensive video library.
+- Create an admin ingerface to manage users and teams
+- Create a system status page to show the status of the system
 
-### Sveltese Documentation (coming soon)
+## Teams
 
-The Sveltese documentation is a comprehensive resource that covers all aspects of the Sveltese framework and our tools. It includes detailed guides, API references, and tutorials for all skill levels.
+- Create team user management
+- Create team admin interface
+- Create team user interface
+- Create team invite system
+
+## User
+
+- User profile page
+- User settings page
+
+## Dashboard
+
+- Create a basic dashboard with some QOL components
+- - Links to user profile
+- - Links to teams
+- - Displays Avatar
+- - Nav Component
+
+## Tests
+
+- tests
+
+## Documentation
+
+- docs
+
+## General
+
+- Change degit structure to pnpm create sveltese@latest format.
+- Add error pages
+- - 404, 500, 403, 401, 400, 422, 503, 504, 505, 507, 508, 510, 511, 599

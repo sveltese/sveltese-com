@@ -104,6 +104,14 @@ Back on the command line run the following command to initialize the database:
 
 ```bash
 pnpm db:init
+pnpm db:seed
+```
+
+The seed will install a test user with the following credentials:
+
+```bash
+email: test@example.com
+password: password
 ```
 
 Run the application using the following command:
@@ -114,4 +122,10 @@ pnpm dev
 
 ## Walkthrough
 
-Start up the project and open it in your browser. There are
+Start up the project and open it in your browser. You will see a welcome page that you can change to your liking. The welcome page is located at `src/routes/+page.svelte`.
+
+The point of this exercise was to create something that you can spin up quickly, get some auth boilerplate, and get started building your application.
+
+### Authentication
+
+The Sveltese template includes a basic authentication system that allows users to register, login, and logout. It also includes a user profile page that displays the user's information.
