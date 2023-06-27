@@ -100,6 +100,8 @@ Open the `.env` file and update the database connection settings to match your l
 DATABASE_URL="postgresql://sveltese:@localhost:5432/sveltese?schema=public"
 ```
 
+The default databases URL is configured to use postgresql with a username sveltese and a database named sveltese. You can change those to your liking or create a database and user with those settings.
+
 Back on the command line run the following command to initialize the database:
 
 ```bash
