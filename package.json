@@ -11,6 +11,8 @@
 		"seed": "node prisma/seed.js"
 	},
 	"scripts": {
+		"copy-env": "test -f ./.env || ncp ./.env.example .env",
+		"postinstall": "pnpm make_env",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
@@ -41,6 +43,7 @@
 		"eslint": "^8.43.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"ncp": "^2.0.0",
 		"postcss": "^8.4.24",
 		"postcss-load-config": "^4.0.1",
 		"prettier": "^2.8.8",
