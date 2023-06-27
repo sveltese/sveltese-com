@@ -12,7 +12,7 @@
 	},
 	"scripts": {
 		"copy-env": "test -f ./.env || ncp ./.env.example .env",
-		"postinstall": "pnpm make_env",
+		"postinstall": "pnpm copy-env",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
