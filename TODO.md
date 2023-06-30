@@ -1,5 +1,17 @@
 # TODO
 
+## General
+- 
+- make it work without using database
+- - right now you need the db or the thing errors.  
+- - if the db is not present turn auth off
+- add to npm registry
+- Change degit structure to pnpm create sveltese@latest format.
+- Add error pages
+- - 404, 500, 403, 401, 400, 422, 503, 504, 505, 507, 508, 510, 511, 599
+
+
+
 ## Authentication
 
 - Add Logout
@@ -42,8 +54,3 @@
 
 - docs
 
-## General
-
-- Change degit structure to pnpm create sveltese@latest format.
-- Add error pages
-- - 404, 500, 403, 401, 400, 422, 503, 504, 505, 507, 508, 510, 511, 599
